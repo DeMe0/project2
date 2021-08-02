@@ -63,7 +63,9 @@ https://cdn.contentful.com/spaces/lwq18859yao6/environments/master/entries?acces
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [wireframes](https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/mobile_wireframe.heic)(https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/desktop_home_wireframe.heic)(https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/desktop_blog_post_wireframe.heic)
+- [mobile wireframes](https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/mobile_wireframe.heic)
+[desktop home wireframe](https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/desktop_home_wireframe.heic)
+[desktop latest post wireframe](https://res.cloudinary.com/ademeo/image/upload/v1627878328/project2/desktop_blog_post_wireframe.heic)
 - [react architecture](https://docs.google.com/drawings/d/1wi6OstKcZ8eZvTZomTK-ukUvwUUHoLlws3hC0u0kPmo/edit?usp=sharing)
 
 
