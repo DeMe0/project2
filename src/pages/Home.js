@@ -5,7 +5,6 @@ import HamburgerMenu from 'react-hamburger-menu'
 const Home = (props) => {
     return (
     <>
-        {/* <HamburgerMenu {...NavBar}/> */}
         <h1>Home Component</h1>
     </>)
 }

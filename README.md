@@ -81,7 +81,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 	Pages
 		- 'Home' page, 'LatestPost' page, 'About' pages
 	Components
-		- App, Main, Header, Footer, Album cards, Tracklists
+		- App, Main, Header, NavBar Footer, Album cards, Tracklists
 - NavBar linking to Home, Albums, and About pages
 
 #### PostMVP
@@ -109,7 +109,7 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components 				| H | 1hr | 0 | 0 |
+| Create React app and files for all components 				| H | 1hr | 1hr | 0 |
 | Mock up wireframes and react architecture						| H | 2hr | 2hr | 0 |
 | Basic Navbar & Footer 										| H | 1hr | 0 | 0 |
 | Set up basic React routing 									| H | 1hr | 0 | 0 |
