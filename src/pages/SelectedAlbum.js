@@ -1,22 +1,28 @@
 import React from 'react'
+// importing useParams 
+import { useParams } from 'react-router'
 
 const SelectedAlbum = (props) => {
-    const loaded = () => {
-        <div>
-            <h1>{props.album.title}</h1>
-        </div>
-    }
-    return(
-    <div>
-        {/* {props.album.map((title, index) => {
-            return (
-                // <h1>SelectedAlbum Page</h1>
-                <h1 onClick={() => props.getAlbum(title)}>{title.title}</h1>
-            );
-        })}  */}
-        <h1>SelectedAlbum</h1>
-    </div>
-    )
+    const params = useParams()
+    console.log(params)
+    console.log(props.album)
+
+    const filteredAlbum = props.album.filter(
+            (d) => d.symbol === params.symbol
+        )[0];
+        console.log(filteredAlbum)
+
+    return (<div>
+        <h1>SelectedAlbum component</h1>
+        <h2>Title: {filteredAlbum.title}</h2><hr/>
+        Tracklist: 
+            {filteredAlbum.tracklist[0].songs.map((item, index) => {
+                return(<div className="songLines">
+                    <p>{item.songTitle}</p>
+                </div>
+                )
+            })}
+    </div>)
 }
 
 export default SelectedAlbum
