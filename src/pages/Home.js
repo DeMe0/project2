@@ -6,7 +6,9 @@ const Home = (props) => {
     return (
     <>
     <p id="pageLocation">Home</p>
-        <h1>Home Component</h1>
+        <div className="welcome">
+            <h1>Welcome to Pocket Full of Stones, a weekly newsletter about (mostly) American rap music and the people who bring it into existence. </h1>
+        </div>
     </>)
 }
 

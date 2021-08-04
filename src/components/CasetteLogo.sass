@@ -1,0 +1,128 @@
+$topColor: darken(#A5ECD7, 30%)
+$cassetteColor: #A5ECD7
+$cassetteBackground: radial-gradient(circle, rgba(165,236,215,1) 71%, rgba(0,0,0,0.8687850140056023) 100%)
+$screwColor: #9FB0AA
+
+// body
+// 	display: flex
+// 	align-items: center
+// 	justify-content: center
+// 	height: 100vh
+// 	background: #1e272e
+
+.casette
+	display: inline-block
+	padding: 20px 30px
+	border-radius: 10px
+	background: $cassetteBackground
+	min-height: 130px
+	position: relative
+	transform: rotate(16deg) scale(.6, .6)
+    
+
+.top
+	border-bottom: 50px solid $topColor
+	border-left: 20px solid transparent
+	border-right: 20px solid transparent
+	height: 0
+	width: 150px
+	position: absolute
+	left: 50%
+	transform: translateX(-50%)
+	bottom: 0px
+
+.screw
+	width: 10px
+	height: 10px
+	background: $screwColor
+	border-radius: 50%
+	position: absolute
+	
+	&:nth-of-type(1)
+		top: 5px
+		left: 5px
+		transform: rotate(-20deg)
+	&:nth-of-type(2)
+		top: 5px
+		right: 5px
+		transform: rotate(15deg)
+	&:nth-of-type(3)
+		bottom: 5px
+		left: 5px
+		transform: rotate(-30deg)
+	&:nth-of-type(4)
+		bottom: 5px
+		right: 5px
+		transform: rotate(45deg)
+	
+	&::before
+		content: ' '
+		display: block
+		width: 10px
+		height: 2px
+		background: $cassetteColor
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+
+.tapesContainer
+	border: 1px solid #000
+	height: 70px
+	overflow: hidden
+	border-radius: 10px
+	background: #fff
+
+.outerTape
+	display: inline-block
+	border-radius: 50%
+	border: 30px solid #000
+	margin-top: -25px
+	padding: 3px
+	background: #fff
+
+	&:nth-of-type(2)
+		border: 20px solid #000
+
+.tape
+	width: 50px
+	height: 50px
+	background: #fff
+	position: relative
+	border-radius: 50%
+	border: 1px solid #9FB0AA
+	overflow: hidden
+	animation: animSpinning 3s infinite linear
+
+	& > div
+		width: 14px
+		height: 4px
+		background: #9FB0AA
+		position: absolute
+	
+		&:nth-of-type(1)
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+		
+		&:nth-of-type(2)
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+	
+		&:nth-of-type(3)
+			top: 9%
+			left: 50%
+			transform: translateX(-50%) rotate(90deg)
+	
+		&:nth-of-type(4)
+			bottom: 9%
+			left: 50%
+			transform: translateX(-50%) rotate(90deg)
+	
+	
+	
+@keyframes animSpinning
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)

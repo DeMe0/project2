@@ -14,12 +14,22 @@ const SelectedAlbum = (props) => {
 
     return (<div>
         <p id="pageLocation">Home > Volume 1 > {filteredAlbum.symbol}</p>
-        <h1>SelectedAlbum component</h1>
         <h2>Title: {filteredAlbum.title}</h2><hr/>
-        Tracklist: 
+        <div className="artworkContainer">
+            <img 
+        src={filteredAlbum.tracklist[0].frontCover}
+        alt="Front Cover"
+        id="frontCover"/>
+        <hr/>
+            <img 
+        src={filteredAlbum.tracklist[0].backCover}
+        alt="Back Cover"
+        id="backCover" />
+        </div>  
+                Tracklist: 
             {filteredAlbum.tracklist[0].songs.map((item, index) => {
                 return(<div className="songLines">
-                    <p>{item.songTitle}</p>
+                    <p>{item.songTitle} {item.songDuration} {item.trackNumber}</p>
                 </div>
                 )
             })}

@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Main from './components/Main';
+import './styles.sass'
+
 
 function App() {
 

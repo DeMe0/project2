@@ -1,0 +1,30 @@
+$gradient:  linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1B, #1C1C1C, #1D1D1D, #1E1E1E, #1F1F1F, #202020, #212121, #222222, #232323, #242424, #252525)
+
+// style the footer and mount it to the bottom of our page
+.footer
+    position: relative
+    display: flex
+    bottom: 0
+    width: 100%
+    border: 1px solid black
+    background: $gradient
+    flex-direction: row
+    justify-content: space-around
+    
+    a
+        text-decoration: none
+        color: white
+
+// style SelectedAlbum page
+
+    // Artwork
+.artworkContainer
+    display: flex
+    justify-content: space-between
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(208,213,68,0.758140756302521) 50%, rgba(255,255,255,1) 100%)
+
+#frontCover, #backCover
+    width: 40%
+    padding: 10px
+
+    // Songs Container
