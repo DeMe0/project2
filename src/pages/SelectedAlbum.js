@@ -13,6 +13,7 @@ const SelectedAlbum = (props) => {
         console.log(filteredAlbum)
 
     return (<div>
+        <p id="pageLocation">Home > Volume 1 > {filteredAlbum.symbol}</p>
         <h1>SelectedAlbum component</h1>
         <h2>Title: {filteredAlbum.title}</h2><hr/>
         Tracklist: 

@@ -5,6 +5,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 const Home = (props) => {
     return (
     <>
+    <p id="pageLocation">Home</p>
         <h1>Home Component</h1>
     </>)
 }

@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 const Volume1 = (props) => {
     console.log(props.album)
 
-    // gives me an instance of the history object
+    // useHistory hook gives me an instance of the history object
+    // learned with 
     const history = useHistory()
 
     const onClick = (albumSymbol) => {
@@ -16,6 +17,7 @@ const Volume1 = (props) => {
 
     return(
     <div className="Volume1">
+        <p id="pageLocation">Home > Volume 1</p>
         <h2>Volume1</h2>
         {props.album.map((item, index) => {
             console.log(item)
@@ -25,13 +27,6 @@ const Volume1 = (props) => {
                 <img src={item.tracklist[0].frontCover} 
                             alt='cover'
                              />
-                {/* Tracklist: {item.tracklist[0].songs.map((song) => {
-                                         console.log(song)
-                    return <div className="tracks">
-                      </a>
-
-                    </div> */}
-                {/* })} */}
             </div>
     })}
         </div>)

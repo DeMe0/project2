@@ -39,7 +39,6 @@ function App() {
         <Header />
         
         {album !== [] ? <Main album={album}/> : <p>Select an Album from Volume1</p>}
-        <Main album={album}/>
         <Footer />
     </div>
   );

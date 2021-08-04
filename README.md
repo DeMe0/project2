@@ -98,10 +98,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | Renders the header, including the Nav | 
 | Footer | Renders the footer |
 | Main | Contains Switch/Routes for content |
-| Nav | Renders the Nav buttons |
-| Album Cards | Renders album artwork that can be clicked and linked to the album's separate page |
-| SelectedAlbum | Renders the correct album info once clicked
-| Tracklists | Renders a track list from the selected album |
+| NavBar | Renders the hamburger menu |
+| Volume1 | Renders album artwork that can be clicked and linked to the album's separate page |
+| SelectedAlbum | Renders the correct album info once clicked, located at the right endpoint
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
@@ -111,14 +110,14 @@ Unless otherwise noted, time is listed in hours:
 | --- | :---: |  :---: | :---: | :---: |
 | Create React app and files for all components 				| H | 1hr | 1hr | 0 |
 | Mock up wireframes and react architecture						| H | 2hr | 2hr | 0 |
-| Basic Navbar & Footer 										| H | 1hr | 0 | 0 |
-| Set up basic React routing 									| H | 1hr | 0 | 0 |
-| Create Contentful CMS and organize our content properly		| H | 2hr | 0 | 0 |
-| Make albums API call, parse important data 					| H | 3hr | 0 | 0 |
-| Display album artwork										 	| H | 3hr | 0 | 0 |
-| Link album artwork to different pages and endpoints			| H | 1hr | 0 | 0 |
-| Use the useState hook to set state for a selected album		| H | 2hr | 0 | 0 |
-| Render list of songs and info of the selected album			| H | 2hr | 0 | 0 |
+| Basic Navbar & Footer 										| H | 1hr | 1.5hr | 0 |
+| Set up basic React routing 									| H | 1hr | 1.5hr | 0 |
+| Create Contentful CMS and organize our content properly		| H | 2hr | 3hr | 0 |
+| Make albums API call, parse important data 					| H | 3hr | 4hr | 0 |
+| Display album artwork										 	| H | 3hr | 2hr | 0 |
+| Link album artwork to different pages and endpoints			| H | 2hr | 3hr | 0 |
+| Use the useState hook to set state for a selected album		| H | 2hr | 2hr | 0 |
+| Render list of songs and info of the selected album			| H | 2hr | 3hr | 0 |
 | Style home display - basic		 							| H | 2hr | 0 | 0 |
 | Style individual album pages display - basic					| H | 2hr | 0 | 0 |
 | Reactive design for tablet and laptop							| H | 2hr | 0 | 0 |
