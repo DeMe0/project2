@@ -1,4 +1,9 @@
 $gradient:  linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1B, #1C1C1C, #1D1D1D, #1E1E1E, #1F1F1F, #202020, #212121, #222222, #232323, #242424, #252525)
+$boxGradient: linear-gradient(90deg, rgba(0,0,0,0.23012955182072825) 0%, rgba(93,93,93,1) 50%, rgba(0,0,0,0.20211834733893552) 100%)
+body
+    height: 100%
+
+// Style the header
 
 // style the footer and mount it to the bottom of our page
 .footer
@@ -10,11 +15,28 @@ $gradient:  linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1
     background: $gradient
     flex-direction: row
     justify-content: space-around
-    
+    margin-top: 40px    
     a
         text-decoration: none
         color: white
 
+// style the About page
+.bioContainer
+    display: flex
+    margin: 1em
+    padding: 1em
+    border: 2px black solid
+    border-radius: 20px
+    background: $boxGradient
+    justify-content: space-between
+    box-shadow: 0 0px 10px 2px gold
+    p
+        color: white
+        text-align: center
+        text-shadow: 2px 2px black
+
+.aboutContainer img
+    width: 100%
 
 // style Home Page
 .home
@@ -22,6 +44,63 @@ $gradient:  linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1
     flex-direction: column
     img
         width: 100%
+
+#pageLocation
+    padding-left: 1em
+
+.welcome
+    margin: 1em
+    padding: 1em
+    border: 2px black solid
+    border-radius: 20px
+    background: $boxGradient
+    h2
+        color: white
+        text-align: center
+        text-shadow: 2px 2px black
+
+.volume1Description
+    margin: 1em
+    padding: 1em
+    border: 2px black solid
+    border-radius: 20px
+    background: $boxGradient
+    text-align: center
+    h3
+        color: white
+        text-align: center
+        text-shadow: 2px 2px black
+    button
+        text-align: center
+        margin-top: -10px
+        padding: .5em
+        border: 2px black solid
+        border-radius: 10px
+        background: linear-gradient(to right, white, lightgray, white)
+        box-shadow: 0 0px 9px 2px gold
+    a
+        width: 100%
+        color: black
+        font-weight: 600
+
+
+// style the volume1 page
+.albumContainer
+    margin: 1em
+    padding: 1em
+    border: 2px black solid
+    border-radius: 20px
+    background: $boxGradient
+    text-align: center
+    h2
+        color: white
+        text-align: center
+        text-shadow: 2px 2px black
+    img
+        box-shadow: 0 0px 20px 2px gold
+        &:hover
+            box-shadow: 0 0px 40px 2px red
+
 
 // style SelectedAlbum page
 
@@ -34,5 +113,32 @@ $gradient:  linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1
 #frontCover, #backCover
     width: 40%
     padding: 10px
+    box-shadow: 0 0px 80px 2px red
+    &:hover
+        filter: invert(100%)
+        transition: 1s
+        box-shadow: 0 0px 80px 2px red
+
+
+.fill:hover,
+.fill:focus
+  box-shadow: inset 0 0 0 2em var(--hover)
 
     // Songs Container
+div .songLines
+    display: flex
+    margin: 1em
+    padding: 1em
+    border: 2px black solid
+    border-radius: 20px
+    background: $boxGradient
+    justify-content: space-between
+    box-shadow: 0 0px 10px 2px gold
+
+    span
+        color: white
+        text-align: center
+        text-shadow: 2px 2px black
+
+.songLinks
+    text-decoration: none

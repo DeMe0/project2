@@ -1,13 +1,18 @@
-import React from 'react'
-import NavBar  from './NavBar'
+import React from "react";
+import NavBar from "./NavBar";
 
 const Header = (props) => {
-    return(
-        <div className = "header">
-            <img src="https://res.cloudinary.com/ademeo/image/upload/v1627925610/project2/Nav_Logo_1.png" alt="logo1"></img>
-            <NavBar />
-        </div>
-    )
-}
+  return (
+    <div className="header">
+      <a href="/">
+        <img
+          src="https://res.cloudinary.com/ademeo/image/upload/v1628130623/project2/PFOS_abbreviation.png"
+          alt="logo1"
+        ></img>
+      </a>
+      <NavBar />
+    </div>
+  );
+};
 
-export default Header
+export default Header;

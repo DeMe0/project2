@@ -1,26 +1,23 @@
 /* Hambuger Menu Dropdown */
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
-
 
 .header {
   display: flex;
   /* background: linear-gradient(to right, #171717, #181818, #191919, #1A1A1A, #1B1B1B, #1C1C1C, #1D1D1D, #1E1E1E, #1F1F1F, #202020, #212121, #222222, #232323, #242424, #252525); */
-  background:
-  linear-gradient(315deg, transparent 75%, #A5ECD7 0) -10px 0,
-  linear-gradient(45deg, transparent 75%, #5c6c68 0) -10px 0,
-  linear-gradient(135deg, #3F486D 50%, transparent 0) 0 0,
-  linear-gradient(45deg, #5c6c68 50%, gray 0) 0 0 #5c6c68;
+  background: linear-gradient(315deg, transparent 75%, #a5ecd7 0) -10px 0,
+    linear-gradient(45deg, transparent 75%, #5c6c68 0) -10px 0,
+    linear-gradient(135deg, #3f486d 50%, transparent 0) 0 0,
+    linear-gradient(45deg, #5c6c68 50%, gray 0) 0 0 #5c6c68;
   background-size: 30px 30px;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .header img {
-height: 50px;
+  height: 50px;
 }
 
 /* The ul styling */
@@ -33,14 +30,14 @@ height: 50px;
   border: 1px solid bisque;
   list-style: none;
 }
- .hamburgerDropDown a {
+.hamburgerDropDown a {
   text-decoration: none;
-  color: white
- }
- .hamburgerDropDown a:hover {
+  color: white;
+}
+.hamburgerDropDown a:hover {
   cursor: pointer;
-  color: #86C7B3;
- }
+  color: #86c7b3;
+}
 
 ul.hamburgerDropDown {
   padding: 10px;
@@ -48,6 +45,11 @@ ul.hamburgerDropDown {
 
 .navbar span {
   background-color: white !important;
+}
+
+.navbar {
+  background: black;
+  padding: 5px;
 }
 
 .Volume1 img {
