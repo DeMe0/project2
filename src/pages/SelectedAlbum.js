@@ -15,7 +15,7 @@ const SelectedAlbum = (props) => {
   return (
     <div>
       <p id="pageLocation">Home > Volume 1 > {filteredAlbum.symbol}</p>
-      <h2>Title: {filteredAlbum.title}</h2>
+      <h2 className="selectedAlbumTitle">Title: {filteredAlbum.title}</h2>
       <hr />
       <div className="artworkContainer">
         <img

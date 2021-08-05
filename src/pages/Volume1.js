@@ -22,6 +22,8 @@ const Volume1 = (props) => {
         return (
           <div className="albumContainer" onClick={() => onClick(item.symbol)}>
             <h2>Title: {item.title}</h2>
+            <h2>Artist: {item.tracklist[0].albumArtist}</h2>
+            <h2>Released: {item.tracklist[0].releaseDate}</h2>
             <img src={item.tracklist[0].frontCover} alt="cover" />
           </div>
         );

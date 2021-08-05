@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import "./styles.sass";
 import "./styles.scss";
+import "./responsive.scss";
 
 function App() {
   const [album, setAlbum] = useState([]);

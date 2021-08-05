@@ -47,6 +47,13 @@ body
 
 #pageLocation
     padding-left: 1em
+    color: white
+    text-shadow: 2px 2px black
+
+.selectedAlbumTitle
+    padding-left: .5em
+    color: white
+    text-shadow: 2px 2px black
 
 .welcome
     margin: 1em
@@ -78,10 +85,15 @@ body
         border-radius: 10px
         background: linear-gradient(to right, white, lightgray, white)
         box-shadow: 0 0px 9px 2px gold
+        &:hover
+            box-shadow: 0 0px 9px 2px red
     a
         width: 100%
         color: black
         font-weight: 600
+
+.vol1Collage
+    text-align: center
 
 
 // style the volume1 page
@@ -100,6 +112,16 @@ body
         box-shadow: 0 0px 20px 2px gold
         &:hover
             box-shadow: 0 0px 40px 2px red
+
+.vol1Collage a img
+    box-shadow: 0 0px 80px 10px gold
+    &:hover
+        box-shadow: 0 0px 80px 10px red
+
+.Volume1 h1
+    margin-left: 1em
+    color: white
+    text-shadow: 2px 2px black
 
 
 // style SelectedAlbum page
@@ -134,6 +156,8 @@ div .songLines
     background: $boxGradient
     justify-content: space-between
     box-shadow: 0 0px 10px 2px gold
+    &:hover
+        box-shadow: 0 0px 80px 10px red
 
     span
         color: white
