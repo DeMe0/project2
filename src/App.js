@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,9 +8,10 @@ import "./styles.sass";
 import "./styles.scss";
 import "./responsive.scss";
 
-function App() {
+function App(props) {
   const [album, setAlbum] = useState([]);
 
+  const history = useHistory();
   const getAllAlbums = async () => {
     // declare our API key
     const response = await fetch(
@@ -40,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header history={history} />
 
       {album !== [] ? (
         <Main album={album} />

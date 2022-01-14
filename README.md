@@ -5,10 +5,6 @@
 - [github project link](https://github.com/DeMe0/project2)
 - [Vercel deployment](https://project2-ne9ze0ru6-deme0.vercel.app/)
 
-## Project Description
-
-For this project, I plan to make a multiple-choice trivia game. I will use React's Link and Source to provide access to instructions, the game itself, and a leaderboard. The questions and possible answers will be populated using an API call. The leaderboard will be stored on a Google Sheet and also viewed through an API call.
-
 ## API
 
 https://cdn.contentful.com/spaces/lwq18859yao6/environments/master/entries?access_token=pKa2NaFQpgn-vznNjywlCZFQqeYiPsgqmYWfD7PYguI

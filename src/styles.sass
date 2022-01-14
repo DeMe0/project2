@@ -4,6 +4,13 @@ body
     height: 100%
 
 // Style the header
+.nav-link button
+    color: white
+    border: none
+    background: none
+    &:hover
+        color: #86c7b3
+        cursor: pointer
 
 // style the footer and mount it to the bottom of our page
 .footer
@@ -44,6 +51,10 @@ body
     flex-direction: column
     img
         width: 100%
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    div 
+        margin-left: 5%
+        margin-right: 5%
 
 #pageLocation
     padding-left: 1em
@@ -131,6 +142,9 @@ body
     display: flex
     justify-content: space-between
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(208,213,68,0.758140756302521) 50%, rgba(255,255,255,1) 100%)
+    #text
+        color: white
+
 
 #frontCover, #backCover
     width: 40%

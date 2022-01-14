@@ -10,7 +10,7 @@ const Header = (props) => {
           alt="logo1"
         ></img>
       </a>
-      <NavBar />
+      <NavBar history={props.history} />
     </div>
   );
 };
